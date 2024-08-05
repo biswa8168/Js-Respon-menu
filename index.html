@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="./images/logoipsum-331.svg" alt="logo">
+        </figure>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>                    
+                </li>
+                <li>
+                    <a href="#">About</a>                    
+                </li>
+                <li>
+                    <a href="#">Services</a>                    
+                </li>
+                <li>
+                    <a href="#">Gallery</a>                    
+                </li>
+                <li>
+                    <a href="#">Contact</a>                    
+                </li>
+            </ul>            
+        </nav>
+        <div class="menubar">
+            <i class="fa-solid fa-bars-staggered "></i>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </header>
+</body>
+<script>
+    let menubar = document.querySelector ('.menubar');
+    let nav = document.querySelector ('nav');
+    menubar.addEventListener ("click", ()=>{
+        nav.classList.toggle('showMenu');
+        menubar.classList.toggle ('xmark')
+    })
+
+</script>
+</html>
